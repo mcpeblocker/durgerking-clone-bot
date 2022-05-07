@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "nodemon": "^2.0.16",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@grammyjs/parse-mode": "^1.1.2",
+    "dayjs": "^1.11.1",
+    "dotenv": "^16.0.0",
+    "grammy": "^1.8.2",
+    "winston": "^3.7.2"
+  },
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node .",
+    "build": "tsc",
+    "prebuild": "rimraf ./dist",
+    "dev": "nodemon src/main.ts"
+  }
+}
